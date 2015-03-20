@@ -1,6 +1,6 @@
-'use strict';
+"use strict";
 
-var LinguisticDataConvertors = require('../lib/LinguisticDataConvertors.js');
+var LinguisticDataConvertors = require("../lib/LinguisticDataConvertors.js");
 
 /*
   ======== A Handy Little Nodeunit Reference ========
@@ -22,15 +22,15 @@ var LinguisticDataConvertors = require('../lib/LinguisticDataConvertors.js');
     test.ifError(value)
 */
 
-exports['awesome'] = {
+exports["version"] = {
   setUp: function(done) {
     // setup here
     done();
   },
-  'no args': function(test) {
+  "no args": function(test) {
     test.expect(1);
     // tests here
-    test.equal(LinguisticDataConvertors.awesome(), 'awesome', 'should be awesome.');
+    test.equal(LinguisticDataConvertors.version(), "version", "should be version.");
     test.done();
   }
 };
