@@ -48,7 +48,7 @@ module.exports = function(grunt) {
         src: ["lib/**/*.js"]
       },
       test: {
-        src: ["test/LinguisticDataConvertors_test.js"]
+        src: ["test/LinguisticDataConverters_test.js"]
       },
     },
     watch: {

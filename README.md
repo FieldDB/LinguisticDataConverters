@@ -1,8 +1,8 @@
-[![Build Status](https://travis-ci.org/OpenSourceFieldlinguistics/LinguisticDataConvertors.png)](https://travis-ci.org/OpenSourceFieldlinguistics/LinguisticDataConvertors)
+[![Build Status](https://travis-ci.org/OpenSourceFieldlinguistics/LinguisticDataConverters.png)](https://travis-ci.org/OpenSourceFieldlinguistics/LinguisticDataConverters)
 
-# Linguistic Data Convertors
+# Linguistic Data Converters
 
-A library of Javascript convertors which can be used by any web app or web site or web service to convert between different linguistic data (often IGT Interlinear Glossed Text) formats.
+A library of Javascript converters which can be used by any web app or web site or web service to convert between different linguistic data (often IGT Interlinear Glossed Text) formats.
 
 
 A separate software component for translating linguistic data structures which can be used in web services or client side apps.
@@ -26,31 +26,31 @@ You can use this library in 3 (or more) ways:
 You can use the fielddb library in any framework or javascript codebase by running bower install.
 
 ```bash
-$ bower install linguistic-data-convertors --save
+$ bower install linguistic-data-converters --save
 ```
 
 ### Zip downloading
 Download the [production version][min] or the [development version][max].
 
-[min]: https://raw.github.com/OpenSourceFieldlinguistics/LinguisticDataConvertors/master/dist/LinguisticDataConvertors.min.js
-[max]: https://raw.github.com/OpenSourceFieldlinguistics/LinguisticDataConvertors/master/dist/LinguisticDataConvertors.js
+[min]: https://raw.github.com/OpenSourceFieldlinguistics/LinguisticDataConverters/master/dist/LinguisticDataConverters.min.js
+[max]: https://raw.github.com/OpenSourceFieldlinguistics/LinguisticDataConverters/master/dist/LinguisticDataConverters.js
 
 In your web page:
 
 ```html
-<script src="dist/LinguisticDataConvertors.min.js"></script>
+<script src="dist/LinguisticDataConverters.min.js"></script>
 <script>
 var output = asEOPASXML(input); // "asEOPASXML"
 </script>
 ```
 
-In your code, you can attach LinguisticDataConvertors's methods to any object.
+In your code, you can attach LinguisticDataConverters's methods to any object.
 
 ```html
 <script>
 var exports = YourAwesomeLinguisticsAppThingy.utils;
 </script>
-<script src="dist/LinguisticDataConvertors.min.js"></script>
+<script src="dist/LinguisticDataConverters.min.js"></script>
 <script>
 var output = YourAwesomeLinguisticsAppThingy.utils.asEOPASXML(input); // "asEOPASXML"
 </script>
@@ -63,11 +63,11 @@ Most of these models are built to be shared by FielDB webservices. details to co
 To use this library in node, use npm
 
 ```bash
-$ npm install linguistic-data-convertors
+$ npm install linguistic-data-converters
 ```
 
 ```javascript
-var LinguisticDataConvertors = require('linguistic-data-convertors');
+var LinguisticDataConverters = require('linguistic-data-converters');
 ```
 
 
@@ -84,7 +84,7 @@ $ erica push https://username:userspassword@corpus.example.org/yourusername-your
 
 # How does this work
 
-We made this video a while back for an instructor which shows how to make custom data convertors.
+We made this video a while back for an instructor which shows how to make custom data converters.
 
 https://youtu.be/t7l_2GRumLs
 
@@ -141,7 +141,7 @@ $ npm install textgrid --save
 
 
 ```javascript
-var audiointervals = require('linguistic-data-convertors/views/audiointervals/map.js');
+var audiointervals = require('linguistic-data-converters/views/audiointervals/map.js');
 var TextGrid = require('textgrid');
 
 for (var input in docs) {
@@ -155,7 +155,7 @@ FieldDB -> JSON:
 
 
 ```javascript
-var asFieldDBJson = require('linguistic-data-convertors/views/datums/map.js');
+var asFieldDBJson = require('linguistic-data-converters/views/datums/map.js');
 
 for (var input in docs) {
 	output = asFieldDBJson(input);
@@ -167,7 +167,7 @@ FieldDB -> EOPAS XML:
 
 
 ```javascript
-var asEOPASXML = require('linguistic-data-convertors/views/export_eopas_xml/map.js');
+var asEOPASXML = require('linguistic-data-converters/views/export_eopas_xml/map.js');
 
 for (var input in docs) {
 	output = asEOPASXML(input);
@@ -179,7 +179,7 @@ FieldDB -> RDF word list:
 
 
 ```javascript
-var asRDFWordList = require('linguistic-data-convertors/views/word_list_rdf/map.js');
+var asRDFWordList = require('linguistic-data-converters/views/word_list_rdf/map.js');
 
 for (var input in docs) {
 	output = asRDFWordList(input);
@@ -190,7 +190,7 @@ for (var input in docs) {
 
 ## Contributing
 
-Get the source code from https://github.com/OpenSourceFieldlinguistics/linguisticdataconvertors
+Get the source code from https://github.com/OpenSourceFieldlinguistics/linguisticdataconverters
 
 * [Signup for a GitHub account](https://github.com/signup/free) (GitHub is free for OpenSource)
 * Click on the "Fork" button to create your own copy.

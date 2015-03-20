@@ -1,8 +1,8 @@
 {
-  "name": "linguistic-data-convertors",
+  "name": "linguistic-data-converters",
   "description": "A library of Linguistic Data Translator/Converter for various formats",
   "version": "2.47.20",
-  "homepage": "https://github.com/OpenSourceFieldlinguistics/LinguisticDataConvertors",
+  "homepage": "https://github.com/OpenSourceFieldlinguistics/LinguisticDataConverters",
   "author": {
     "name": "FieldDB Contributors",
     "email": "opensource@fielddb.org",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/OpenSourceFieldlinguistics/LinguisticDataConvertors"
+    "url": "https://github.com/OpenSourceFieldlinguistics/LinguisticDataConverters"
   },
   "bugs": {
     "url": "https://github.com/OpenSourceFieldlinguistics/FieldDB/issues"
@@ -21,7 +21,7 @@
       "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
     }
   ],
-  "main": "lib/LinguisticDataConvertors",
+  "main": "lib/LinguisticDataConverters",
   "engines": {
     "node": ">= 0.10.0"
   },

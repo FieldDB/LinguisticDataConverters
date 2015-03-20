@@ -1,11 +1,11 @@
 {
-  "name": "linguistic-data-convertors",
+  "name": "linguistic-data-converters",
   "version": "2.47.20",
   "authors": [
     "FieldDB Contributors <opensource@fielddb.org>"
   ],
   "description": "A library of Linguistic Data Translator/Converter for various formats",
-  "main": "LinguisticDataConvertors.js",
+  "main": "LinguisticDataConverters.js",
   "moduleType": [
     "amd",
     "globals",
