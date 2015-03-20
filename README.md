@@ -1,11 +1,10 @@
-This is to dev and debug FieldDB App Client in a couchapp
 
-## CouchApp
+A separate software component for translating linguistic data structures which can be used in web services or client side apps.
 
-If you want to deploy the app, the fastest way is to push it to a couchdb.
-You can use this folder, and the build_debug.sh  script to deploy to a local couch.
-Then log in at 
-
-(this depends on a chicken and the egg, that you have a public user on your machine, which you should create using the chrome extension...)
-
-  * https://localhost:6984/public-firstcorpus/_design/pages/index.html
+* LingSync
+* OnlineLinguisticDatabase
+* ELAN
+* Praat
+* FLEx
+* ATLAS http://arxiv.org/pdf/cs/0007022v1.pdf
+* XMLIGT
