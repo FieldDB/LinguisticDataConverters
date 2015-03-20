@@ -1,0 +1,31 @@
+{
+  "name": "linguistic-data-convertors",
+  "version": "2.47.20",
+  "authors": [
+    "FieldDB Contributors <opensource@fielddb.org>"
+  ],
+  "description": "A library of Linguistic Data Translator/Converter for various formats",
+  "main": "LinguisticDataConvertors.js",
+  "moduleType": [
+    "amd",
+    "globals",
+    "node"
+  ],
+  "keywords": [
+    "linguistics",
+    "data",
+    "igt",
+    "transformation",
+    "conversion"
+  ],
+  "license": "Apache 2.0",
+  "homepage": "http://lingsync.org",
+  "ignore": [
+    "**/.*",
+    "lib",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
