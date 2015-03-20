@@ -15,12 +15,12 @@ A separate software component for translating linguistic data structures which c
 * XMLIGT
 
 
-
-# Installation
+# (Re-) Using 
 
 You can use this library in 3 (or more) ways:
 
-## Bower
+## In the browser
+### Bower
 
 You can use the fielddb library in any framework or javascript codebase by running bower install.
 
@@ -28,6 +28,32 @@ You can use the fielddb library in any framework or javascript codebase by runni
 $ bower install linguistic-data-convertors --save
 ```
 
+### Zip downloading
+Download the [production version][min] or the [development version][max].
+
+[min]: https://raw.github.com/OpenSourceFieldlinguistics/LinguisticDataConvertors/master/dist/LinguisticDataConvertors.min.js
+[max]: https://raw.github.com/OpenSourceFieldlinguistics/LinguisticDataConvertors/master/dist/LinguisticDataConvertors.js
+
+In your web page:
+
+```html
+<script src="dist/LinguisticDataConvertors.min.js"></script>
+<script>
+var output = asEOPASXML(input); // "asEOPASXML"
+</script>
+```
+
+In your code, you can attach LinguisticDataConvertors's methods to any object.
+
+```html
+<script>
+var exports = YourAwesomeLinguisticsAppThingy.utils;
+</script>
+<script src="dist/LinguisticDataConvertors.min.js"></script>
+<script>
+var output = YourAwesomeLinguisticsAppThingy.utils.asEOPASXML(input); // "asEOPASXML"
+</script>
+```
 
 ## Node.js
 
@@ -37,6 +63,10 @@ To use this library in node, use npm
 
 ```bash
 $ npm install linguistic-data-convertors
+```
+
+```javascript
+var LinguisticDataConvertors = require('linguistic-data-convertors');
 ```
 
 
@@ -50,7 +80,8 @@ To use this library in couchapp, use erica
 $ erica push https://username:userspassword@corpus.example.org/yourusername-yourdatabase
 ```
 
-# Getting Started
+
+# How does this work
 
 We made this video a while back for an instructor which shows how to make custom data convertors.
 
@@ -96,8 +127,6 @@ for (var input in files) {
 	output = TextGrid.textgridToIGT(input);
 }
 ```
-
-
 
 
 FieldDB -> Praat:
