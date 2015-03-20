@@ -14,8 +14,6 @@ spreadsheet_build_dev
 
 #ignore private config files
 *_production*
-*private*
-*mcgill*
 
 # Ignore natural lib
 public/libs/natural/
@@ -90,6 +88,7 @@ target
 *.exe
 *.o
 *.so
+dist
 
 # Packages #
 ############
