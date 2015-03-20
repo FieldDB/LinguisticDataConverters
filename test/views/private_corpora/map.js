@@ -1,14 +1,15 @@
-/* updated to be compatible with pre-1.38 databases */
-function(doc) {
-  try {
-    /* if this document has been deleted, the ignore it and return immediately */
-    if (doc.trashed && doc.trashed.indexOf("deleted") > -1) return;
+describe("put testname here", function() {
 
-    if (doc.collection == "private_corpora" || doc.collection == "private_corpuses" || (doc.confidential && doc.confidential.secretkey)) {
-      //doc.fieldDBtype = "Corpus";
-      emit(doc.timestamp, doc);
-    }
-  } catch (e) {
-    //emit(e, 1);
-  }
-};
+  it("should load", function() {
+    expect(true).toBeTruthy();
+  });
+
+  it("should produce expected output structure", function() {
+    var expectedOutput = {
+      key: doc.timestamp,
+      value: doc
+    };
+    expect(expectedOutput).toEqual(expectedOutput);
+  });
+
+});
