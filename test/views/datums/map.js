@@ -1,27 +1,15 @@
-/* updated to be compatible with pre-1.38 databases */
+describe("put testname here", function() {
 
-function(doc) {
-  try {
-    /* if this document has been deleted, the ignore it and return immediately */
-    if (doc.trashed && doc.trashed.indexOf("deleted") > -1) {
-      return;
-    }
-    if (doc.collection == "datums" || (doc.datumFields && doc.session)) {
-      var dateModified = doc.dateModified;
-      if (dateModified) {
-        try {
-          dateModified = dateModified.replace(/["\\]/g, '');
-          dateModified = new Date(dateModified);
-          /* Use date modified as a timestamp if it isnt one already */
-          dateModified = dateModified.getTime();
-        } catch (e) {
-          //emit(error, null);
-        }
-      }
-      //doc.fieldDBtype = "Datum";
-      emit(dateModified, doc);
-    }
-  } catch (e) {
-    //emit(e, 1);
-  }
-}
+  it("should load", function() {
+    expect(true).toBeTruthy();
+  });
+
+  it("should produce expected output structure", function() {
+    var expectedOutput = {
+      key: dateModified,
+      value: doc
+    };
+    expect(expectedOutput).toEqual(expectedOutput);
+  });
+
+});
