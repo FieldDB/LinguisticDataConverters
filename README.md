@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/OpenSourceFieldlinguistics/LinguisticDataConvertors.png)](https://travis-ci.org/OpenSourceFieldlinguistics/LinguisticDataConvertors)
 
 # Linguistic Data Convertors
 
